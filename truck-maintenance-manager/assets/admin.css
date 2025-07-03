@@ -1,0 +1,335 @@
+/* Truck Maintenance Manager - Admin Styles */
+
+.tmm-dashboard {
+  max-width: 1200px;
+}
+
+.tmm-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.tmm-stat-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tmm-stat-number {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.tmm-truck-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.tmm-truck-card {
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tmm-truck-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.tmm-truck-header {
+  display: flex;
+  justify-content: between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.tmm-truck-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.tmm-urgency-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #fff;
+}
+
+.tmm-maintenance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.tmm-maintenance-item {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.tmm-maintenance-item:hover {
+  background: #f0f0f0;
+}
+
+.tmm-maintenance-type {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.tmm-maintenance-status {
+  font-size: 0.7em;
+  color: #666;
+}
+
+/* Urgency Color Classes */
+.tmm-bg-green {
+  background-color: #d4edda !important;
+  border-color: #c3e6cb !important;
+}
+
+.tmm-bg-yellow-light {
+  background-color: #fff3cd !important;
+  border-color: #ffeaa7 !important;
+}
+
+.tmm-bg-yellow {
+  background-color: #ffeaa7 !important;
+  border-color: #fdcb6e !important;
+}
+
+.tmm-bg-orange-light {
+  background-color: #ffe8d1 !important;
+  border-color: #fab1a0 !important;
+}
+
+.tmm-bg-orange {
+  background-color: #fab1a0 !important;
+  border-color: #e17055 !important;
+}
+
+.tmm-bg-red {
+  background-color: #f8d7da !important;
+  border-color: #f5c6cb !important;
+}
+
+.tmm-border-green {
+  border-color: #28a745 !important;
+}
+
+.tmm-border-yellow-light {
+  border-color: #ffc107 !important;
+}
+
+.tmm-border-yellow {
+  border-color: #fd7e14 !important;
+}
+
+.tmm-border-orange-light {
+  border-color: #fd7e14 !important;
+}
+
+.tmm-border-orange {
+  border-color: #dc3545 !important;
+}
+
+.tmm-border-red {
+  border-color: #dc3545 !important;
+}
+
+/* Modal Styles */
+.tmm-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.tmm-modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.tmm-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tmm-close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tmm-close:hover {
+  color: #000;
+}
+
+/* Form Styles */
+.tmm-form-group {
+  margin-bottom: 15px;
+}
+
+.tmm-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.tmm-form-group input,
+.tmm-form-group select,
+.tmm-form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.tmm-form-group textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+.tmm-button {
+  background-color: #0073aa;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.tmm-button:hover {
+  background-color: #005a87;
+}
+
+.tmm-button-secondary {
+  background-color: #666;
+}
+
+.tmm-button-secondary:hover {
+  background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tmm-truck-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .tmm-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .tmm-maintenance-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .tmm-modal-content {
+    width: 95%;
+    margin: 10% auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .tmm-stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .tmm-maintenance-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Loading States */
+.tmm-loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.tmm-spinner {
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #0073aa;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Success/Error Messages */
+.tmm-message {
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.tmm-message.success {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+}
+
+.tmm-message.error {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+}
+
+/* Table Enhancements */
+.wp-list-table .tmm-urgency-cell {
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+}
+
+.wp-list-table .tmm-actions {
+  white-space: nowrap;
+}
+
+.wp-list-table .tmm-actions .button {
+  margin-right: 5px;
+}

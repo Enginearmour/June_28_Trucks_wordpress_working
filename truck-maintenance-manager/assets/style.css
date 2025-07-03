@@ -1,0 +1,87 @@
+/* Truck Maintenance Manager - Simple Styles */
+
+.tmm-container {
+  max-width: 1200px;
+}
+
+.tmm-stats {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.tmm-stat-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  min-width: 150px;
+}
+
+.tmm-stat-card h3 {
+  font-size: 2em;
+  margin: 0 0 5px 0;
+  color: #0073aa;
+}
+
+.tmm-stat-card p {
+  margin: 0;
+  color: #666;
+}
+
+.tmm-form-section {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.tmm-trucks-section {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.tmm-frontend-dashboard {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tmm-truck-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.tmm-truck-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tmm-truck-card h4 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.tmm-truck-card p {
+  margin: 5px 0;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .tmm-stats {
+    flex-direction: column;
+  }
+  
+  .tmm-truck-list {
+    grid-template-columns: 1fr;
+  }
+}
